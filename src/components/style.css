@@ -1,0 +1,17 @@
+.swiper {
+    padding: 4px 0;
+}
+
+.swiper-slide {
+    filter: blur(1.5px);
+    box-shadow: 0 0 2px rgb(120, 120, 120);
+}
+
+.swiper-slide-active {
+    filter: blur(0px);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--swiper-button-color);
+}
