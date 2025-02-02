@@ -8,7 +8,7 @@ import Button from "@mui/material/Button";
 
 const Certificates = () => {
     return (
-        <div className="lg:py-2 -z-50!">
+        <div className="lg:py-2">
             {/* Heading */}
             <Section_heading heading="certificates" />
             <Cards />
@@ -48,9 +48,10 @@ export const Cards = () => {
             </div>
 
             <div className="lg:hidden">
-                <OwlCarousel {...options} className='!z-0 !relative owl-theme my-1'
-                    loop
-                    dotsEach={true}
+                <OwlCarousel {...options} className='owl-theme my-1'
+                    loop={true}
+                    nav={true}
+                    lazyLoad={true}
                     dotsSpeed={500}
                     autoplay={true}
                     autoplaySpeed={1000}
@@ -76,7 +77,7 @@ export const Certificate_Cards = () => {
 
     return (
         certificates.map((certificate, index) =>
-            <div className="flex flex-col gap-3 w-fit" key={index}>
+            <div className="flex flex-1 md:flex-none flex-col gap-3" key={index}>
                 <div className="h-64 lg:w-72 lg:h-52 overflow-hidden rounded-lg shadow-md">
                     <img src={certificate.image}
                         alt={certificate.name}
