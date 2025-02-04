@@ -14,7 +14,7 @@ const Home = () => {
                     Hi, I'm <span className="font-normal">Aadesh Gupta</span>
                 </p>
 
-                <p className={`w-fit h-10 text-3xl font-normal tracking-wide bg-gradient-to-r from-[#B06AB3] to-[#4568DC] bg-clip-text text-transparent open-sans`}>
+                <p className={`w-fit min-h-10 text-[1.7rem] text-center font-normal tracking-wide bg-gradient-to-r from-[#B06AB3] to-[#4568DC] bg-clip-text text-transparent open-sans`}>
                     <ProfessionTags />
                 </p>
 
