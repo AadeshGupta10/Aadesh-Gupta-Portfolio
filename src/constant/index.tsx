@@ -58,7 +58,7 @@ export const tags = [
     "MERN Stack Developer",
     "React.js Developer",
     "Node.js Developer",
-    // "Next.js Developer"
+    "Next.js Developer"
 ];
 
 export const skillset = [
@@ -107,12 +107,12 @@ export const skillset = [
                 link: "https://react.dev/",
                 image: <StackIcon name="reactjs" />
             },
-            // {
-            //     label: "Next.js",
-            //     type: "React Framework",
-            //     link: "https://nextjs.org/",
-            //     image: <StackIcon name="nextjs" />
-            // },
+            {
+                label: "Next.js",
+                type: "React Framework",
+                link: "https://nextjs.org/",
+                image: <StackIcon name="nextjs" />
+            },
             {
                 label: "Redux",
                 type: "State Management Library",
@@ -213,12 +213,12 @@ export const skillset = [
                 link: "https://en.wikipedia.org/wiki/Multi-factor_authentication",
                 image: "skills/mfa.png"
             },
-            // {
-            //     label: "Auth0",
-            //     type: "Identity & Access Platform",
-            //     link: "https://auth0.com/",
-            //     image: <StackIcon name="auth0" />
-            // },
+            {
+                label: "Auth0",
+                type: "Identity & Access Platform",
+                link: "https://auth0.com/",
+                image: <StackIcon name="auth0" />
+            },
         ]
     },
     {
@@ -271,12 +271,6 @@ export const skillset = [
                 link: "https://vercel.com/",
                 image: "skills/vercel.png"
             },
-            // {
-            //     label: "Render",
-            //     type: "Hosting Platform",
-            //     link: "https://render.com/",
-            //     image: <StackIcon name="render" />
-            // },
             {
                 label: "Postman",
                 type: "API Testing Tool",
