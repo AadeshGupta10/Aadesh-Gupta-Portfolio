@@ -202,6 +202,12 @@ export const skillset = [
                 image: "skills/rest_api.png"
             },
             {
+                label: "Nodemailer",
+                type: "Email Service",
+                link: "https://nodemailer.com/",
+                image: "skills/nodemailer.png"
+            },
+            {
                 label: "JSON Web Token",
                 type: "Authentication Standard",
                 link: "https://jwt.io/",
@@ -212,6 +218,12 @@ export const skillset = [
                 type: "Security Mechanism",
                 link: "https://en.wikipedia.org/wiki/Multi-factor_authentication",
                 image: "skills/mfa.png"
+            },
+            {
+                label: "Auth.js",
+                type: "Authentication Library",
+                link: "https://authjs.dev/",
+                image: "skills/auth_js.webp"
             },
             {
                 label: "Auth0",
@@ -234,7 +246,7 @@ export const skillset = [
                 label: "Mongoose",
                 type: "MongoDB ODM Library",
                 link: "https://mongoosejs.com/",
-                image: "skills/mongoose.webp"
+                image: "skills/mongoose.png"
             },
             {
                 label: "MySQL",
