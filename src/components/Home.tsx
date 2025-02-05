@@ -19,7 +19,7 @@ const Home = () => {
                 </p>
 
                 <p className={`${!showImage && 'lg:w-1/2 text-center'} font-normal open-sans leading-6`}>
-                    I am a passionate full stack developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technology like <span className="font-semibold">React.js</span> as well as back-end technologies like <span className="font-semibold">Node.js</span>, <span className="font-semibold">MySQL</span> and <span className="font-semibold">MongoDB</span>. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.
+                    I am a passionate full stack developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like <span className="font-semibold">React.js</span> and <span className="font-semibold">Next.js</span> as well as back-end technologies like <span className="font-semibold">Node.js</span>, <span className="font-semibold">MySQL</span> and <span className="font-semibold">MongoDB</span>. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.
                 </p>
 
                 <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 mt-4">
