@@ -85,15 +85,15 @@ export const Certificate_Cards = () => {
         <>
             {certificates.map((certificate, index) =>
                 <div className="flex flex-1 md:flex-none flex-col gap-3" key={index}>
-                    <div className="h-64 lg:w-72 lg:h-52 overflow-hidden rounded-lg shadow-md"
-                        onClick={() => {
-                            setCertificateIndex(index);
-                            setIsModalOpen(true);
-                        }}>
+                    <div className="h-64 lg:w-72 lg:h-52 overflow-hidden rounded-lg shadow-md">
                         <img src={certificate.image}
                             alt={certificate.name}
                             loading="lazy"
-                            className="size-full object-contain object-bottom rounded-md"
+                            className="size-full object-contain object-bottom rounded-md cursor-pointer"
+                            onClick={() => {
+                                setCertificateIndex(index);
+                                setIsModalOpen(true);
+                            }}
                         />
                     </div>
                     <Button
