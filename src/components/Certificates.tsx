@@ -5,6 +5,8 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Button from "@mui/material/Button";
+import { useState } from "react";
+import { Modal } from "@mui/material";
 
 const Certificates = () => {
     return (
@@ -75,22 +77,42 @@ export const Certificate_Cards = () => {
         link.click();
     }
 
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
+    const [certificateIndex, setCertificateIndex] = useState<number>(0)
+
     return (
-        certificates.map((certificate, index) =>
-            <div className="flex flex-1 md:flex-none flex-col gap-3" key={index}>
-                <div className="h-64 lg:w-72 lg:h-52 overflow-hidden rounded-lg shadow-md">
-                    <img src={certificate.image}
-                        alt={certificate.name}
-                        loading="lazy"
-                        className="size-full object-contain object-bottom rounded-md"
-                    />
+        <>
+            {certificates.map((certificate, index) =>
+                <div className="flex flex-1 md:flex-none flex-col gap-3" key={index}>
+                    <div className="h-64 lg:w-72 lg:h-52 overflow-hidden rounded-lg shadow-md"
+                        onClick={() => {
+                            setCertificateIndex(index);
+                            setIsModalOpen(true);
+                        }}>
+                        <img src={certificate.image}
+                            alt={certificate.name}
+                            loading="lazy"
+                            className="size-full object-contain object-bottom rounded-md"
+                        />
+                    </div>
+                    <Button
+                        variant="outlined"
+                        onClick={() => handleFileDownload(certificate.image, certificate.name)}>
+                        Download Certificate
+                    </Button>
                 </div>
-                <Button
-                    variant="outlined"
-                    onClick={() => handleFileDownload(certificate.image, certificate.name)}>
-                    Download Certificate
-                </Button>
-            </div>
-        )
+            )}
+
+            <Modal
+                open={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                className="flex justify-center items-center"
+            >
+                <img src={certificates[certificateIndex].image} alt=""
+                    className="max-h-96 object-contain"
+                />
+            </Modal>
+        </>
     )
 }

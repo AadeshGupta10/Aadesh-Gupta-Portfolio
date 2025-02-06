@@ -10,8 +10,8 @@ const Home = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:pt-20 lg:pb-5 lg:px-4">
             {/* Name, Roles and About */}
             <div className={`flex flex-col ${!showImage && 'items-center'} gap-5`}>
-                <p className={`w-fit open-sans text-5xl tracking-wide font-thin py-5 text-center`}>
-                    Hi, I'm <span className="font-normal">Aadesh Gupta</span>
+                <p className={`open-sans text-5xl tracking-wide leading-tight font-thin py-5 text-center`}>
+                    Hi, I'm <span className="font-normal"> <br className="md:hidden"/> Aadesh Gupta</span>
                 </p>
 
                 <p className={`w-fit min-h-10 text-[1.7rem] text-center font-normal tracking-wide bg-gradient-to-r from-[#B06AB3] to-[#4568DC] bg-clip-text text-transparent open-sans`}>
