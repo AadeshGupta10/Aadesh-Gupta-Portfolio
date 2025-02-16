@@ -190,6 +190,12 @@ export const skillset = [
                 image: <StackIcon name="nodejs" />
             },
             {
+                label: "GraphQL",
+                type: "API Query Language",
+                link: "https://graphql.org/",
+                image: <StackIcon name="graphql" />
+            },
+            {
                 label: "Express",
                 type: "Web Framework",
                 link: "https://expressjs.com/",
