@@ -1,0 +1,154 @@
+{
+	"Portfolio Admin Panel":
+	[
+		{
+			"Login Page Details": [
+				"MFA Authentication",
+				{
+					"Recovery":{
+						"Step 1":"Enter Authenticated Email Id",
+						"Step 2":{
+							"Verify Email Id":{
+								"Success":"Send OTP to Email Id",
+								"Failed":[
+									"Send me alert on email for suspicious recovery attempt",
+									"Show an Invalid Email notification & toast to user"
+								],
+								"Error":"Show an Error message as notification & toast to user"
+							}
+						},
+						"Step 3":{
+							"Verify Email OTP":{
+								"Success":"move forward",
+								"Failed":"Show an Invalid Otp notification & toast to user",
+								"Error":"Show an Error message as notification & toast to user"
+							}
+						},
+						"Step 4":"Ask for a Secret Token in numeric input field with input restriction to other types",
+						"Step 5":"Show a new MFA setup QR",
+						"Step 6":{
+							"Setup Success":"Change the MFA Basecode in Database and redirect user to Admin Panel",
+							"Setup Failed":"Change the MFA QR code and clear the input field. Don't change the MFA Basecode in Database"
+						}
+					}
+				}
+			]
+		},
+	
+		{
+			"Panel Pages":{
+				"Common Tips":[
+					"Close the ongoing session after 24 hrs of login.",
+					"On every login, update the user on email."
+				],
+				"Overview":[
+					"Responsive view of different models of Portfolio. Options and respective dropdown to device types (Smartphones, Tablets, laptops & Desktop)",
+					"Toggle button to enable/disable view of other pages on top."
+				],
+				"Home":[
+					"Name Heading",
+					"Option to Create, Edit, Delete and Re-order Professional tags",
+					"Profile Summary",
+					"Resume Upload and View Option",
+					"Social Profile Icon with Name dropdown. Restriction to provide hyperlinks."
+				],
+				"Skills":[
+					{
+						"Section 1":[
+						"Create, Edit, Delete and Re-order Skill set headers.",
+						{
+							"Skill headers":[
+								"Frontend Development",
+								"Backend Development",
+								"UI Libraries",
+								"Databases",
+								"Devops and Tools",
+								"Programming Languages",
+								"AI Tools",
+								"Coding Platforms",
+								"Core Competencies"
+							]
+						}
+						]
+					},
+					{
+						"Section 2":
+							"Skill Icons Create, Edit and Delete, along with tagline. (Tagline is optional for Core Competencies header)"
+					},
+					{
+						"Section 3":[
+						"Selection of Skill header and icon from a Section 1 & Section 2 data in form of dropdown.",
+						"Create, Read, Update, Delete and Re-order of skills within a header."
+						]
+					}
+				],
+				"Qualifications":[
+					"Start & End Date (Month and Year)",
+					"Course Name",
+					"College/School Name",
+					"Grade (CGPA/FGPA, Percentage). Approx. to 2 decimal places."
+				],
+				"Experience":[
+					"Start & End Date (Month and Year) - (Total Duration Calculated)",
+					"Job Title",
+					"Company Name",
+					"Job summary in paragraph/pointers",
+					"Projects work on"
+				],
+				"Internships":[
+					"Start & End Date (Month and Year) - (Total Duration Calculated)",
+					"Internship Title",
+					"Company Name",
+					"Internship summary in paragraph/pointers",
+					"Tech Stack used in duration",
+					"Completion Letter/Certificate upload, view and download option"
+				],
+				"Projects":[
+					"Create, Edit, Update and Re-order Filterable Project tabs.",
+					{
+						"Project Tabs":[
+							"React.js",
+							"Next.js",
+							"Rest Api",
+							"Web (Basic)",
+							"Web (Intermediate)",
+							"Web (Advance)",
+							"PowerBI",
+							"SpringBoot",
+							"Python",
+							"React Native"
+						]
+					},
+					{
+						"Project Card":[
+							"Thumbnail Upload, Edit and View",
+							"Project Name",
+							"Short Project Description",
+							"Live Link / Ongoing",
+							"Github repo in both cases"
+						]
+					}
+				],
+				"Certificates":[
+					"Thumbnail Upload, Edit and View option.",
+					"Enable/Disable Download Certificate option"
+				],
+				"Testimonials":[
+					""
+				],
+				"Contact":[
+					"Email Id and google passkey required to setup nodemailer",
+					{
+						"Contact Form Fields":[
+							"User Name",
+							"User Email",
+							"Company Name (if any)",
+							"Subject",
+							"Message"
+						]
+					}
+				]
+			}
+		}
+	]
+}

@@ -11,7 +11,7 @@ const Home = () => {
             {/* Name, Roles and About */}
             <div className={`flex flex-col ${!showImage && 'items-center'} gap-5`}>
                 <p className={`open-sans text-5xl tracking-wide leading-tight font-thin py-5 text-center`}>
-                    Hi, I'm <span className="font-normal"> <br className="md:hidden"/> Aadesh Gupta</span>
+                    Hi, I'm <span className="font-normal"><br className="md:hidden" />Aadesh Gupta</span>
                 </p>
 
                 <p className={`w-fit min-h-10 text-[1.7rem] text-center font-normal tracking-wide bg-gradient-to-r from-[#B06AB3] to-[#4568DC] bg-clip-text text-transparent open-sans`}>
@@ -24,8 +24,14 @@ const Home = () => {
 
                 <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 mt-4">
                     <Button variant="outlined" href="/resumes/Aadesh_Gupta_Resume.pdf" download={"Aadesh Gupta Resume"}>
-                        Download My Resume
+                        <div className="h-6 w-[160px] overflow-hidden group">
+                            <div className="flex flex-col transition-transform duration-300 ease-in-out group-hover:-translate-y-6">
+                                <span className="text-center">Hire Me</span>
+                                <span className="text-center">Download Resume</span>
+                            </div>
+                        </div>
                     </Button>
+
                     <div className="flex items-center gap-6">
                         {/* Github */}
                         <Tooltip title={"Github"} placement="bottom" className="cursor-pointer">
