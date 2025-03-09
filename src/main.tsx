@@ -18,7 +18,7 @@ const reactQuery = new QueryClient();
 createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
     <QueryClientProvider client={reactQuery}>
-      <ThemeProvider defaultTheme='system'>
+      <ThemeProvider defaultTheme='light'>
         <RouterProvider router={routes} />
       </ThemeProvider>
     </QueryClientProvider>
