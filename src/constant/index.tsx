@@ -189,12 +189,12 @@ export const skillset = [
                 link: "https://nodejs.org/",
                 image: <StackIcon name="nodejs" />
             },
-            {
-                label: "GraphQL",
-                type: "API Query Language",
-                link: "https://graphql.org/",
-                image: <StackIcon name="graphql" />
-            },
+            // {
+            //     label: "GraphQL",
+            //     type: "API Query Language",
+            //     link: "https://graphql.org/",
+            //     image: <StackIcon name="graphql" />
+            // },
             {
                 label: "Express",
                 type: "Web Framework",
@@ -231,12 +231,12 @@ export const skillset = [
                 link: "https://authjs.dev/",
                 image: "skills/auth_js.webp"
             },
-            {
-                label: "Auth0",
-                type: "Identity & Access Platform",
-                link: "https://auth0.com/",
-                image: <StackIcon name="auth0" />
-            },
+            // {
+            //     label: "Auth0",
+            //     type: "Identity & Access Platform",
+            //     link: "https://auth0.com/",
+            //     image: <StackIcon name="auth0" />
+            // },
         ]
     },
     {
