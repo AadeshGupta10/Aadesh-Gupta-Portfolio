@@ -502,6 +502,10 @@ export const projects = [
 
 export const certificates = [
     {
+        image: "certificates/Data_Analytics_Job_Simulation_By_Deloitte_Australia.jpg",
+        name: "Data Analytics Job Simulation : By Deloitte Australia"
+    },
+    {
         image: "certificates/node.js.jpg",
         name: "Node_js Certificate : By Scaler Topics"
     },
