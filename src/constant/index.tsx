@@ -58,7 +58,7 @@ export const tags = [
     "MERN Stack Developer",
     "React.js Developer",
     "Node.js Developer",
-    "Next.js Developer"
+    // "Next.js Developer"
 ];
 
 export const skillset = [
@@ -89,12 +89,12 @@ export const skillset = [
                 link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
                 image: <StackIcon name="js" />
             },
-            {
-                label: "Jquery",
-                type: "JavaScript Library",
-                link: "https://jquery.com/",
-                image: <StackIcon name="jquery" />
-            },
+            // {
+            //     label: "Jquery",
+            //     type: "JavaScript Library",
+            //     link: "https://jquery.com/",
+            //     image: <StackIcon name="jquery" />
+            // },
             {
                 label: "TypeScript",
                 type: "Programming Language",
@@ -107,12 +107,12 @@ export const skillset = [
                 link: "https://react.dev/",
                 image: <StackIcon name="reactjs" />
             },
-            {
-                label: "Next.js",
-                type: "React Framework",
-                link: "https://nextjs.org/",
-                image: <StackIcon name="nextjs" />
-            },
+            // {
+            //     label: "Next.js",
+            //     type: "React Framework",
+            //     link: "https://nextjs.org/",
+            //     image: <StackIcon name="nextjs" />
+            // },
             {
                 label: "Redux",
                 type: "State Management Library",
@@ -219,18 +219,18 @@ export const skillset = [
                 link: "https://jwt.io/",
                 image: "skills/json_web_token.png"
             },
-            {
-                label: "Multi-Factor Authentication",
-                type: "Security Mechanism",
-                link: "https://en.wikipedia.org/wiki/Multi-factor_authentication",
-                image: "skills/mfa.png"
-            },
-            {
-                label: "Auth.js",
-                type: "Authentication Library",
-                link: "https://authjs.dev/",
-                image: "skills/auth_js.webp"
-            },
+            // {
+            //     label: "Multi-Factor Authentication",
+            //     type: "Security Mechanism",
+            //     link: "https://en.wikipedia.org/wiki/Multi-factor_authentication",
+            //     image: "skills/mfa.png"
+            // },
+            // {
+            //     label: "Auth.js",
+            //     type: "Authentication Library",
+            //     link: "https://authjs.dev/",
+            //     image: "skills/auth_js.webp"
+            // },
             // {
             //     label: "Auth0",
             //     type: "Identity & Access Platform",
@@ -300,40 +300,23 @@ export const skillset = [
     {
         title: "Programming Languages",
         data: [
-            {
-                label: "Python",
-                type: "Programming Language",
-                link: "https://www.python.org/",
-                image: <StackIcon name="python" />
-            },
-            {
-                label: "Java",
-                type: "Programming Language",
-                link: "https://www.java.com/",
-                image: <StackIcon name="java" />
-            },
+            // {
+            //     label: "Python",
+            //     type: "Programming Language",
+            //     link: "https://www.python.org/",
+            //     image: <StackIcon name="python" />
+            // },
+            // {
+            //     label: "Java",
+            //     type: "Programming Language",
+            //     link: "https://www.java.com/",
+            //     image: <StackIcon name="java" />
+            // },
             {
                 label: "PHP",
                 type: "Scripting Language",
                 link: "https://www.php.net/",
                 image: <StackIcon name="php" />
-            }
-        ]
-    },
-    {
-        title: "AI Tools",
-        data: [
-            {
-                label: "ChatGPT",
-                type: "AI Chatbot",
-                link: "https://chat.openai.com/",
-                image: "skills/chatgpt.avif"
-            },
-            {
-                label: "Gemini",
-                type: "Browser for Low-Bandwidth Internet",
-                link: "https://gemini.circumlunar.space/",
-                image: "skills/gemini.png"
             }
         ]
     },
