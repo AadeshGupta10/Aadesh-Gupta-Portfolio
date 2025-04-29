@@ -485,6 +485,14 @@ export const projects = [
 
 export const certificates = [
     {
+        image: "certificates/Cyber_Security_Job_Simulation_By_Mastercard.jpg",
+        name: "Cyber Security Job Simulation : By Mastercard"
+    },
+    {
+        image: "certificates/Cyber_Job_Simulation_By_Deloitte_Australia.jpg",
+        name: "Cyber Job Simulation : By Deloitte Australia"
+    },
+    {
         image: "certificates/Data_Analytics_Job_Simulation_By_Deloitte_Australia.jpg",
         name: "Data Analytics Job Simulation : By Deloitte Australia"
     },
